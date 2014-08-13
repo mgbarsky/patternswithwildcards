@@ -1,11 +1,11 @@
 patternswithwildcards
 =====================
-<h1>Patterns with wildcards</h1>
+<h1>Patterns with wildcards from massive datasets</h1>
 <p>This is a program which finds all occurrences of a specified string pattern in the input text.
 The pattern may contain a number of wildcards.</p> 
 <p>For example, searching for <em>'tgt(2)tct(1-6)cat'</em> 
 finds all positions in input text 
-where <em>'tgt'</em> is followed by arbitrarily two characters (precisely 2), then by <em>'tct'</em>, then by 
+where <em>'tgt'</em> is followed by arbitrarily two characters (exactly 2), then by <em>'tct'</em>, then by 
 unspecified 1-6 characters, and finally by <em>'cat'</em>.</p>
 <p>The program is designed to handle arbitrarily large input texts (whole genomes, for example) 
 in a small constant amount of RAM.
@@ -38,9 +38,10 @@ There is a sample text file 'Sample.txt'.
 Select it through GUI and enter the following pattern to serach: 'the(1-5)re'.
 Also specify to append 10 characters from each side. <br>
 The output could be written to 'result.txt' specified by the user.<br>
-The result file contains tab-delimited lines. Each line consists of: <br>
-input text file name, <br>
-start position of pattern occurrence, <br>
-start position of the context, <br>
-and the context string itself: pattern occurrence in the text, surrounded by specified margins. 
-
+The result file contains tab-delimited lines. Each line consists of: 
+<ul>
+<li>input text file name </li>
+<li>start position of pattern occurrence</li>
+<li>start position of the context </li>
+<li>the context string itself: pattern occurrence in the text, surrounded by specified margins.</li> 
+</ul>
